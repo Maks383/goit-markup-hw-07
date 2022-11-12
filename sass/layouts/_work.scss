@@ -8,23 +8,20 @@
     margin-bottom: 50px;
   }
   
-  
-  .work-list {
+  .card {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
   
-  .work-item {
+  .card__item {
     position: relative;
   }
   
-  .work-heading {
+  .card__heading {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
@@ -34,3 +31,8 @@
     color: #ffffff;
     background-color: rgba(47, 48, 58, 0.8);
   }
+
+.work__card {
+  padding-top: 27px;
+    padding-bottom: 27px;
+}

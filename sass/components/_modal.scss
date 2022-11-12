@@ -34,6 +34,9 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-button:hover & {
+    fill: #2196F3;
+  }
 }
 
 
@@ -56,10 +59,6 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-button:hover .svg {
-  fill: #2196F3;
 }
 
 .backdrop {
@@ -94,16 +93,10 @@ border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input:focus,
-.modal-input:hover {
+  &:focus,
+  &:hover {
   border-color: #2196F3;
 }
-
-.modal-input:focus + .modal-input-icon,
-.modal-input:hover + .modal-input-icon {
-  fill: #2196F3;
 }
 
 .input-wrap {
@@ -118,6 +111,10 @@ border-radius: 4px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-input:focus + &,
+  .modal-input:hover + & {
+  fill: #2196F3;
+}
 }
 
 .modal-field {
@@ -136,11 +133,10 @@ border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-input-bottom:focus,
-.modal-input-bottom:hover {
+  &:focus,
+  &:hover {
   border-color: #2196F3;
+}
 }
 
 .modal-input-bottom::placeholder {
@@ -208,11 +204,10 @@ border: none;
 transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
+  &:hover,
+  &:focus {
   background-color:  #188CE8;
+}
 }
 
 .checkbox-text {
